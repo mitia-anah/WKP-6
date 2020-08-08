@@ -1,0 +1,44 @@
+.wrapper {
+    display: flex;
+    gap: 2rem;
+}
+.container {
+    background-color: lightgray;
+    width: 350px;
+    height: 250px;
+}
+.form-check {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    padding-inline-start: 1rem;
+    padding-block-end: 1rem;
+}
+
+h1 {
+    font-weight: 700;
+    font-style: oblique;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 400;
+    text-align: center;
+}
+
+.food-restaurent {
+    list-style: none;
+    font-size: 16px;
+    padding: 3px;
+    display: flex;
+    justify-content: space-between;
+    padding-inline-start: 16px;
+ }
+
+.confirm-btn {
+    background-color: black;
+    color: wheat;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-block-start: 10px;
+}
