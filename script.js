@@ -56,17 +56,23 @@ const listOfFood = () => {
 // Filter the spicy and vegetarian element using .filter()
 const spicyInput = document.querySelector('#spicy');
 const vegInput = document.querySelector('#veg');
-	
+ 
+	const checkSpicy = () => {
+		if (spicyInput.checked) {
+			console.log("mmmmmmmmmmmmm");
+		}
+	}
 // filter the food which are spicy
 const filteredSpicy = (spicy) => {
-return spicy.filter(type => type.spicy);
+	return spicy.filter(type => type.spicy);
 }
-spicyInput.addEventListener('change', () =>)
-const checkSpicy = () => {
-	if (spicyInput.checked) {
-		console.log("mmmmmmmmmmmmm");
+spicyInput.addEventListener('change', () => {
+	const checkSpicy = () => {
+		if (spicyInput.checked) {
+			console.log("mmmmmmmmmmmmm");
+		};
 	}
-}
+});
 
 console.log(filteredSpicy(foods));
 // const showSpicyFood = () => {
@@ -91,9 +97,7 @@ const showVegFood = () => {
 		  <span>${veg.price}</span>
 		</li>`).join('');
 		vegInput.innerHTML = filteredVeg;
-	};
-	console.log(filteredVeg)
+	}; 
 };
-
-spicyInput.addEventListener('change', showSpicyFood);
+ 
 vegInput.addEventListener('change', showVegFood);
